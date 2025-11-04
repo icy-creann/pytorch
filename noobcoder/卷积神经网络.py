@@ -87,3 +87,6 @@ with torch.no_grad():  # 评估时不需要计算梯度
 
 accuracy = 100 * correct / total
 print(f"Test Accuracy: {accuracy:.2f}%")
+
+#7.保存模型
+torch.save(model.state_dict(), 'cnn_model.pt')
